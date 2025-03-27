@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terima Kasih!</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .gif-container {
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+        .gif-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .back-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 12px 25px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="gif-container">
+        <!-- GIF dari Giphy (contoh: animasi "finish") -->
+        <iframe src="https://giphy.com/embed/3o7abKhOpu0NwenH3O" frameBorder="0" allowFullScreen></iframe>
+    </div>
+    <button class="back-btn" onclick="window.location.href='soal3.html'">Kembali ke Form</button>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 3 - Form Data Diri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Khusus Form */
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 25px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #FF5722;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #E64A19;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Data Diri Mahasiswa</h1>
+        <div class="form-container">
+            <form action="result.html" method="GET">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim" required>
+                </div>
+                <div class="form-group">
+                    <label for="jurusan">Jurusan:</label>
+                    <select id="jurusan" name="jurusan" required>
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Data</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
